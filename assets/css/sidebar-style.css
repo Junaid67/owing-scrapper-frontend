@@ -1,0 +1,63 @@
+@font-face{
+  font-family: product-sans;
+  src: url("./../Fonts/product-sans/FontsFree-Net-ProductSans-Medium.ttf");
+  src: url("./../Fonts/product-sans/FontsFree-Net-ProductSans-Black.ttf");
+  src: url("./../Fonts/product-sans/Product\ Sans\ Bold.ttf");
+  src: url("./../Fonts/product-sans/Product\ Sans\ Bold\ Italic.ttf");
+  src: url("./..Fonts/product-sans/Product\ Sans\ Italic.ttf");
+  src: url("./../Fonts/product-sans/Product\ Sans\ Regular.ttf");
+
+}
+.sidebar-wraper{
+    display: flex;
+    background-color: #1E3231;
+    height: 100%;
+    width: 280px;
+    z-index: 1000;
+    position: fixed;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.sidebar-wraper .logo{
+    padding-left: 40px;
+}
+.nav-manu ul{
+    list-style: none;
+}
+.nav-manu ul li{
+    padding: 10px 0 10px 40px;
+}
+.nav-manu ul li:hover{
+    background-color: #152322;
+}
+.nav-manu ul li a{
+    color: #CCCCCC;
+    font-size: 21px;
+    text-decoration: none;
+    font-family: Product Sans;
+}
+
+.nav-footer{
+    align-items: baseline;
+    margin-top: auto;
+}
+.nav-footer ul{
+    list-style: none;
+}
+.nav-footer ul li{
+    padding: 10px 0 10px 40px;
+}
+.nav-footer ul li:hover{
+    background-color: #152322;
+}
+.nav-footer ul li a{
+    color: #CCCCCC;
+    font-size: 21px;
+    text-decoration: none;
+    font-family: Product Sans;
+}
+.nav-footer ul li a i {
+    color: red;
+}
+

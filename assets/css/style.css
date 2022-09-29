@@ -1,0 +1,274 @@
+
+@font-face{
+  font-family: product-sans;
+  src: url("./../Fonts/product-sans/FontsFree-Net-ProductSans-Medium.ttf");
+  src: url("./../Fonts/product-sans/FontsFree-Net-ProductSans-Black.ttf");
+  src: url("./../Fonts/product-sans/Product\ Sans\ Bold.ttf");
+  src: url("./../Fonts/product-sans/Product\ Sans\ Bold\ Italic.ttf");
+  src: url("./..Fonts/product-sans/Product\ Sans\ Italic.ttf");
+  src: url("./../Fonts/product-sans/Product\ Sans\ Regular.ttf");
+
+}
+body{
+  background-color: #F5F6FA !important;
+}
+.auth-form-outer-sec {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-form-inner-sec {
+  width: 750px;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.auth-inner-padding {
+  padding: 20px 150px;
+  padding-bottom: 65px;
+}
+
+.auth-form-header {
+  text-align: center;
+}
+
+.auth-or-text {
+  font-size: 16px;
+  color: #707070;
+}
+
+.auth-form-sec .form-label {
+  color: #707070;
+  font-size: 16px;
+}
+
+.form-group {
+  margin-top: 20px;
+}
+
+.form-group label {
+  font-family: Product Sans;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.cus-input {
+  font-size: 21px;
+  font-family: Product Sans;
+  font-weight: normal;
+  background-color: #F5F6FA;
+  padding: 20px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border: none;
+}
+.submit-btn {
+  margin-top: 20px;
+  border: 1px solid #CCCCCC !important;
+  width: 100%;
+  color: #707070 !important;
+  padding: 5px 0px !important;
+  font-size: 21px !important;
+  font-family: Product Sans;
+  font-weight: normal !important;
+}
+
+.submit-btn:hover {
+  background-color: #060A0A;
+  color: #fff !important;
+  transition-duration: 0.3s;
+}
+/* index page */
+.indexSec{
+  background-color: #fff;
+  padding: 20px;
+  height: auto;
+  margin-top: 30%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+/* Table wrapped Dive Main start*/
+.manage-page{
+  background-color: #fff;
+  padding: 80px 40px;
+  height: auto;
+  margin: 10% 0;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.manage-page h2{
+    font-size: 28px;
+    font-family: Product Sans Medium;
+    font-weight: 500;
+}
+/* Table wrapped Dive Main end*/
+/* Table Action Buttons */
+table tr td {
+  vertical-align: middle;
+}
+table tr td .btn-act{
+  background-color: #F3F4F8;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 0px;
+}
+.table tr td .btn-act:hover{
+  background-color: #F3F4F8;
+  transition-duration: 0.3s;
+}
+table tr td .btn-edit:hover i.fa-pencil{
+  background-color: #F3F4F8;
+  color: #0071f2;
+  border: 0px;
+}
+table tr td .btn-delete:hover i.fa-trash{
+  background-color: #F3F4F8;
+  color: #FF4147;
+  border: 0px;
+}
+@media (max-width:900px) {
+  .auth-form-inner-sec {
+    width: 100%;
+  }
+
+  .auth-inner-padding {
+    padding: 20px 50px;
+  }
+}
+/* Toggle Button */
+.sidebar-collaps-btn-inner {
+    position: fixed;
+    right: 0;
+    top: 20px;
+    font-size: 20px;
+    color: #707070;
+    background-color: transparent;
+    border: none;
+    z-index: 9999;
+}
+.sidebar{
+   position: fixed;
+   top: 0;
+   left: 0;
+    transition: all 0.5s ease;
+  }
+  .wraper{
+    padding-left: 280px;
+  }
+.main-content{
+  width: 100%;
+  /* margin-left: 280px; */
+}
+/********************* products scrollbar stylings start *********************/
+::-webkit-scrollbar {
+  width: 11px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #DBE2ED;
+  border-radius: 3px;
+  border: 3px solid transparent;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+/* Modal css start */
+.bg-color{
+  background-color: #E8F3F9;
+}
+.modal-header .custom-close{
+  color: #fff;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;
+    background-color: #0071F2;
+    -webkit-border-radius: 50%;
+}
+.custom-close .btn-close-i{  
+  font-size: 18px;
+}
+.modal-body .cust-labl{
+  font-family: Product Sans;
+  font-weight: normal;
+  color: #707070;
+  font-size: 16px;
+}
+.modal-body .custom-form-control{
+    background-color: #F5F6FA !important;
+    color: #060A0A;
+    border-radius: 7px;
+    height: 50px;
+    margin: 15px 0;
+    font-family: Product Sans Medium;
+    font-weight: normal;
+    font-size: 16px;
+    box-shadow: none;
+}
+.modal-body .custom-textare{
+  background-color: #F5F6FA !important;
+  color: #060A0A;
+  margin: 15px 0;
+  font-size: 16px;
+  box-shadow: none;
+}
+.modal-footer .btn-save{
+  box-shadow: none;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  background-color: #0071F2;
+  font-family: Product Sans;
+  color: #fff;
+  font-size: 21px;
+  font-weight: 500;
+  width: 213px;
+  height: 45px;
+  border-radius: 7px;
+}
+.modal-footer .btn-save:hover{
+  background-color: #0071F2;
+  color: #fff;
+  border: 0;
+}
+
+/* Modal css end */
+
+/********************* products scrollbar stylings end *********************/
+@media (max-width:991px) {
+  .sidebar{
+    display: none;
+    transition: all 0.5s ease;
+    position: fixed;
+    z-index: 9999;
+  }
+  .wraper{
+    padding-left: 0px;
+  }
+  
+}
+

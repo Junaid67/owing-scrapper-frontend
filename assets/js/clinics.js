@@ -9,9 +9,15 @@ function displayClinicTable(){
         success: function (response) {
             // console.log(response);
             var clinics = JSON.parse(response);
-            // console.log(clinics);
+            clinicsFill=[];
+            clinics.clinics.forEach(element => {
+                if(element.name != "" && element.address !="" && element.fax !=""){
+                    clinicsFill.push(element);
+                }
+            });
+            
             clinicTable = $('#manage-clinics-table').DataTable({
-                "data": clinics.clinics,
+                "data": clinicsFill,
                 columns: [{
                         'data': 'name'
                     },

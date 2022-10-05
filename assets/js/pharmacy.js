@@ -9,11 +9,17 @@ $.ajax({
     method: 'GET',
     success: function (response) {
         var pharmacy = JSON.parse(response);
-        console.log(pharmacy);
+        pharmacyFill=[];
+        pharmacy.pharmacies.forEach(element => {
+            if(element.name != "" && element.phone !="" && element.email !="" && element.fax !="" && element.address !=""){
+                pharmacyFill.push(element);
+            }
+        });
+        // console.log(pharmacy);
         pharmacyTable = $('#manage-pharmacy-table').DataTable({
-            "data": pharmacy.pharmacies,
+            "data": pharmacyFill,
             columns: [{
-                    'data': 'name'
+                    'data': 'name',
                 },
                 {
                     'data': 'phone'

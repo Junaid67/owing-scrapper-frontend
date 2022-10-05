@@ -31,6 +31,9 @@
 .nav-manu ul li:hover{
     background-color: #152322;
 }
+.nav-manu ul li.active{
+    background-color: #152322;
+}
 .nav-manu ul li a{
     color: #CCCCCC;
     font-size: 21px;

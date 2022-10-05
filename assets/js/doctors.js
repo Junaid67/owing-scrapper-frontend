@@ -10,9 +10,16 @@ $.ajax({
     method: 'GET',
     success: function (response) {
         var doctors = JSON.parse(response);
+
+        doctorsFill=[];
+        doctors.doctors.forEach(element => {
+            if(element.name != "" && element.specialties !="" && element.RegNumber !=""){
+                doctorsFill.push(element);
+            }
+        });
         // console.log(doctors);
         docTable = $('#manage-doctor-table').DataTable({
-            "data": doctors.doctors,
+            "data": doctorsFill,
             columns: [{
                     'data': 'name'
                 },

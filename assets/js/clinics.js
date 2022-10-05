@@ -31,7 +31,10 @@ function displayClinicTable(){
                         'data': 'email'
                     },
                     {
-                        'data': 'url'
+                        "data" : "url",
+                        render: function ( data, type, row, meta ) {
+                        return '<a href="' + data + '" target="_blank">'+ data +'</a>';
+                        }
                     },
                     {
                         'data': 'phone'
